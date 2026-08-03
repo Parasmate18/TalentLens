@@ -12,8 +12,10 @@ from groq import Groq
 import json
 from pydantic import BaseModel, Field
 
+GROQ_API_KEY="gsk_your_actual_groq_api_key"
+
 load_dotenv()
-my_api_key=os.getenv("GROQ_API_KEY")
+my_api_key = os.getenv("GROQ_API_KEY")
 
 if not my_api_key:
     raise ValueError("API key kaha hai bhai")
